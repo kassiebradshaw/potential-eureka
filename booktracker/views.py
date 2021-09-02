@@ -16,8 +16,7 @@ class BookDetailView(DetailView):
 class BookCreateView(CreateView):
     template_name='create_book.html'
     model = Book
-    # fields=['title', 'author', 'summary', 'owner']
-    fields=['title']
+    fields=['title', 'author', 'summary', 'owner']
 
 class BookUpdateView(UpdateView):
     template_name='update_book.html'
