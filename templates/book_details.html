@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content%}
-    <section>
-        <a href="{% url 'book_list' %}">Back to Book List</a>
-        <h2>{{ book.title }}</h2>
-        <p>Author: {{ book.author }}</p>
-        <p>Summary: {{ book.summary }}</p>
-        <p>Owner: {{ book.owner }}</p>
-        <a href="{% url 'update_book' book.pk %}">Update This Entry</a>
-        <a href="{% url 'delete_book' book.pk %}">Delete This Book</a>
-    </section>
+    <button><a href="{% url 'book_list' %}">Back to Book List</a></button>
+    <h2>{{ book.title }}</h2>
+    <p><b>Author:</b> {{ book.author }}</p>
+    <p><b>Summary:</b> {{ book.summary }}</p>
+    <p><b>Owner:</b> {{ book.owner }}</p>
+    <button><a href="{% url 'update_book' book.pk %}">Update This Entry</a></button>
+    <br>
+    <button><a href="{% url 'delete_book' book.pk %}">Delete This Book</a></button>
 {% endblock content %}

@@ -1,0 +1,45 @@
+ body {
+    background-color: rgb(84, 56, 138);
+    max-width:max-content;
+    margin: auto;
+    padding: 10px;
+
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid black;
+    text-align: center;
+}
+
+section {
+    background-color: bisque;
+    padding: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 20px;
+    border: 20px solid white;
+    text-align: center;
+}
+
+p {
+    margin-left: 50px;
+    max-width: 300px;
+    word-wrap: normal;
+    padding: 40 px;
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
