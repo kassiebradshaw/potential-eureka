@@ -49,7 +49,7 @@ DjangoX does not use Poetry out of the box. So you'll need to look at the files 
 
 ## User Acceptance Tests
 
-* [ ] Verify that your pages render as expected
+* [x] Verify that your pages render as expected
 
 ## Stretch Goals
 
