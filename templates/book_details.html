@@ -2,11 +2,12 @@
 
 {% block content%}
     <section>
+        <a href="{% url 'book_list' %}">Back to Book List</a>
         <h2>{{ book.title }}</h2>
         <p>Author: {{ book.author }}</p>
         <p>Summary: {{ book.summary }}</p>
         <p>Owner: {{ book.owner }}</p>
-        <a href="{% url 'update_book' %}">Update This Entry</a>
-        <a href="{% url 'delete_book' %}">Delete This Book</a>
+        <a href="{% url 'update_book' book.pk %}">Update This Entry</a>
+        <a href="{% url 'delete_book' book.pk %}">Delete This Book</a>
     </section>
 {% endblock content %}
